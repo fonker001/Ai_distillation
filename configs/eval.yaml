@@ -1,0 +1,8 @@
+student_path: models/student/final
+cache_dir: data/cache_topk           # used for held-out KD/CE metrics
+teacher_model_id: TinyLlama/TinyLlama-1.1B-Chat-v1.0
+prompts_path: data/eval_prompts.jsonl
+max_new_tokens: 80
+temperature: 0.7
+top_p: 0.9
+output_report: reports/eval_report.json

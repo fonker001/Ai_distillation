@@ -1,0 +1,9 @@
+teacher_gguf_path: models/teacher/tinyllama-1.1b-chat-v1.0.Q4_K_M.gguf
+tokenizer_model_id: TinyLlama/TinyLlama-1.1B-Chat-v1.0
+conversations_path: data/generated/conv.jsonl
+output_dir: data/cache_topk
+top_k: 32
+sequence_length: 384
+shard_size: 500
+n_threads: 4
+n_batch: 512

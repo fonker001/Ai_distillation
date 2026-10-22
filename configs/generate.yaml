@@ -1,0 +1,19 @@
+teacher_gguf_path: models/teacher/tinyllama-1.1b-chat-v1.0.Q4_K_M.gguf
+tokenizer_model_id: TinyLlama/TinyLlama-1.1B-Chat-v1.0
+
+output_path: data/generated/conv.jsonl
+checkpoint_path: data/generated/conv.ckpt.json
+
+num_conversations: 100
+turns_per_conversation: [2, 4]
+max_new_tokens_per_turn: 60      # 60 is enough; lower from 80 saves time
+max_sequence_tokens: 384
+temperature: 0.8
+top_p: 0.9
+do_sample: true
+seed: 42
+min_response_chars: 8
+duplicate_check: true
+checkpoint_every: 25
+n_threads: 4                     # your i7 has 4 physical cores
+n_batch: 512
